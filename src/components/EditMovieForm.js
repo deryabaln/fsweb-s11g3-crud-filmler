@@ -9,7 +9,7 @@ const EditMovieForm = (props) => {
   const {id}= useParams();
 
   const { setMovies } = props;
-  
+ 
   const [movie, setMovie] = useState({
     title: "",
     director: "",
@@ -37,6 +37,7 @@ const EditMovieForm = (props) => {
         console.log(err);
       });
   };
+  
   useEffect(()=>{
     axios
     .get(`http://localhost:9000/api/movies/${id}`)
