@@ -6,7 +6,7 @@ import axios from "axios";
 
 const AddMovieForm = (props) => {
     const { setMovies } = props;
-    const {push}= useHistory();
+    const { push } = useHistory();
 
     const [newMovie, setNewMovie] = useState({
         title: "",

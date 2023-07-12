@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Link, useParams} from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 import axios from "axios";
 
 const Movie = (props) => {
-  const { addToFavorites, deleteMovie} = props;
+  const { addToFavorites, deleteMovie } = props;
 
   const [movie, setMovie] = useState("");
 
@@ -21,8 +21,8 @@ const Movie = (props) => {
       });
   }, [id]);
 
-  const handlerDelete = () =>{
-  deleteMovie(id)
+  const handlerDelete = () => {
+    deleteMovie(id)
   }
 
   return (

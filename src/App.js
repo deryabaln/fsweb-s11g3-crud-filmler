@@ -18,7 +18,7 @@ const App = () => {
   const [movies, setMovies] = useState([]);
   const [favoriteMovies, setFavoriteMovies] = useState([]);
 
-  const [darkMode, setDarkMode]= useState(true);
+  const [darkMode, setDarkMode] = useState(true);
 
   const history = useHistory();
 
@@ -49,7 +49,7 @@ const App = () => {
       console.log(favoriteMovies)
     }
   }
-  const handleDarkModeChange= ()=>{
+  const handleDarkModeChange = () => {
     setDarkMode(!darkMode)
   }
 
@@ -61,7 +61,7 @@ const App = () => {
       </nav>
 
       <div className="max-w-4xl mx-auto px-3 pb-4" >
-        <MovieHeader/>
+        <MovieHeader />
         <div className="flex flex-col sm:flex-row gap-4">
           <FavoriteMovieList favoriteMovies={favoriteMovies} />
 
@@ -86,7 +86,7 @@ const App = () => {
               <Redirect to="/movies" />
             </Route>
           </Switch>
-          
+
         </div>
       </div>
     </div>
