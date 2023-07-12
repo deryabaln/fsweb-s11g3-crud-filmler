@@ -31,15 +31,15 @@ td {
 }
 
 tr:nth-child(2n) {
-  @apply bg-zinc-100;
+  @apply bg-zinc-100 dark:bg-slate-700 dark:text-white;
 }
 tr {
-  @apply hover:bg-sky-50;
+  @apply hover:bg-sky-50 dark:bg-slate-900 dark:text-white;
 }
 
 input,
 textarea {
-  @apply rounded border border-zinc-300 block w-full;
+  @apply rounded border border-zinc-300 block w-full dark:bg-slate-800 dark:text-white;
 }
 
 input {
